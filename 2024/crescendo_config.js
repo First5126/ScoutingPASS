@@ -127,6 +127,17 @@ var config_data = `
     }
   ],
   "postmatch": [
+    { "name": "Do They Follow A Strategy?",
+      "code": "st",
+      "type": "radio",
+      "choices": {
+        "n": "Amp<br>",
+        "a": "Defense<br>",
+        "v": "Trap<br>",
+        "x": "No Strategy"
+      },
+      "defaultValue": "x"
+    },
     { "name": "Driver Skill",
       "code": "ds",
       "type": "radio",
