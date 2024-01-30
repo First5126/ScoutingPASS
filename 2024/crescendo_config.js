@@ -131,9 +131,9 @@ var config_data = `
       "code": "st",
       "type": "radio",
       "choices": {
-        "n": "Amp<br>",
-        "a": "Defense<br>",
-        "v": "Trap<br>",
+        "a": "Amp<br>",
+        "d": "Defense<br>",
+        "t": "Trap<br>",
         "x": "No Strategy"
       },
       "defaultValue": "x"
