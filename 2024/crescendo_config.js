@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2024mnbt",
       "required": "true"
     },
     { "name": "Match Level",
@@ -105,7 +105,7 @@ var config_data = `
   ],
   "endgame": [
     { "name": "Stage Timer",
-      "code": "dt",
+      "code": "st",
       "type": "timer"
     },
     { "name": "Final Status",
@@ -121,10 +121,29 @@ var config_data = `
       },
       "defaultValue": "x"
     },
+    { "name": "Scored Ensemble",
+      "code": "ese",
+      "type": "bool"
+    },
     { "name": "Note in Trap",
       "code": "nit",
+      "type": "counter",
+      "max": 3
+    },
+    { "name": "High Notes Scored",
+      "code": "ehn",
+      "type": "counter",
+      "max": 3
+    },
+    { "name": "Times Flagged",
+      "code": "etf",
+      "type": "counter"
+    },
+    { "name": "Attacked Stage",
+      "code": "eas",
       "type": "bool"
     }
+    
   ],
   "postmatch": [
     { "name": "Do They Follow A Strategy?",
@@ -138,7 +157,7 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Driver Skill",
+	{ "name": "Driver Skill",
       "code": "ds",
       "type": "radio",
       "choices": {
@@ -177,6 +196,10 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
+    { "name": "Critical Failure",
+      "code": "cf",
+      "type": "bool"
+    },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
       "type": "bool"
@@ -194,7 +217,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 250
     }
   ]
 }`;
