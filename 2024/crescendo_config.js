@@ -76,6 +76,10 @@ var config_data = `
     { "name": "Speaker Scores",
       "code": "ass",
       "type": "counter"
+    },
+    { "name": "Shots Missed",
+      "code": "asm",
+      "type": "counter"
     }
   ],
   "teleop": [
@@ -89,6 +93,10 @@ var config_data = `
     },
     { "name": "Times Amplified",
       "code": "tta",
+      "type": "counter"
+    },
+    { "name": "Shots Missed",
+      "code": "tsm",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -150,12 +158,16 @@ var config_data = `
       "code": "st",
       "type": "radio",
       "choices": {
+        "n": "Defense<br>",
         "a": "Amp<br>",
-        "d": "Defense<br>",
-        "t": "Trap<br>",
+        "v": "Fast Speaker<br>",
         "x": "No Strategy"
       },
       "defaultValue": "x"
+    },
+    { "name": "Trap Strategy",
+      "code": "ts",
+      "type": "bool"
     },
 	{ "name": "Driver Skill",
       "code": "ds",
