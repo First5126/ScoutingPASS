@@ -155,7 +155,7 @@ var config_data = `
   ],
   "postmatch": [
     { "name": "Do They Follow A Strategy?",
-      "code": "st",
+      "code": "stg",
       "type": "radio",
       "choices": {
         "n": "Defense<br>",
