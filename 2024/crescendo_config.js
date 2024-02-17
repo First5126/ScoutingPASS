@@ -77,8 +77,12 @@ var config_data = `
       "code": "ass",
       "type": "counter"
     },
-    { "name": "Shots Missed",
-      "code": "asm",
+    { "name": "Missed Amp",
+      "code": "ama",
+      "type": "counter"
+    },
+    { "name": "Missed Speaker",
+      "code": "ams",
       "type": "counter"
     }
   ],
@@ -91,12 +95,16 @@ var config_data = `
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
-      "code": "tta",
+    { "name": "Missed Amp",
+      "code": "tma",
       "type": "counter"
     },
-    { "name": "Shots Missed",
-      "code": "tsm",
+    { "name": "Missed Speaker",
+      "code": "tms",
+      "type": "counter"
+    },
+    { "name": "Amplified Shots",
+      "code": "tas",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -123,25 +131,26 @@ var config_data = `
         "p": "Parked<br>",
         "o": "Onstage<br>",
         "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
     },
-    { "name": "Scored Ensemble",
-      "code": "ese",
+    { "name": "Harmony # of Bots",
+      "code": "enc",
+      "type": "counter"
+    },
+    { "name": "Note(s) in Trap",
+      "code": "ent",
       "type": "bool"
     },
-    { "name": "Notes in Trap",
-      "code": "nit",
-      "type": "counter",
-      "max": 3
+    { "name": "Amp Human Player",
+      "code": "ahp",
+      "type": "bool"
     },
     { "name": "High Notes Scored",
       "code": "ehn",
-      "type": "counter",
-      "max": 3
+      "type": "counter"
     },
     { "name": "Times Flagged",
       "code": "etf",
@@ -161,7 +170,7 @@ var config_data = `
         "n": "Defense<br>",
         "a": "Amp<br>",
         "v": "Fast Speaker<br>",
-        "x": "No Strategy"
+        "x": "Not Discerned"
       },
       "defaultValue": "x"
     },
@@ -180,17 +189,20 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Defense Rating",
+    { "name": "Defense Estimate",
       "code": "dr",
       "type": "radio",
       "choices": {
         "b": "Below Average<br>",
         "a": "Average<br>",
-        "g": "Good<br>",
         "e": "Excellent<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"
+    },
+    { "name": "Number of Collisions",
+      "code": "enc",
+      "type": "counter"
     },
     { "name": "Speed Rating",
       "code": "sr",
@@ -218,11 +230,6 @@ var config_data = `
     },
     { "name": "Dropped Notes (>2)",
       "code": "dn",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
       "type": "bool"
     },
     { "name": "Comments",
