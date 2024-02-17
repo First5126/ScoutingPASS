@@ -104,7 +104,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Amplified Shots",
-      "code": "tas",
+      "code": "tam",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -137,7 +137,7 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Harmony # of Bots",
-      "code": "enc",
+      "code": "ehm",
       "type": "counter"
     },
     { "name": "Note(s) in Trap",
