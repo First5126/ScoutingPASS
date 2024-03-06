@@ -106,7 +106,7 @@ var config_data = `
     { "name": "Amplified Shots",
       "code": "tam",
       "type": "counter"
-    },
+    }
   ],
   "endgame": [
     { "name": "Stage Timer",
