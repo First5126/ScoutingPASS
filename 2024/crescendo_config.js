@@ -107,17 +107,6 @@ var config_data = `
       "code": "tam",
       "type": "counter"
     },
-    { "name": "Pickup From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    }
   ],
   "endgame": [
     { "name": "Stage Timer",
@@ -147,10 +136,6 @@ var config_data = `
     { "name": "Amp Human Player",
       "code": "ahp",
       "type": "bool"
-    },
-    { "name": "High Notes Scored",
-      "code": "ehn",
-      "type": "counter"
     },
     { "name": "Times Flagged",
       "code": "etf",
@@ -204,18 +189,6 @@ var config_data = `
       "code": "enc",
       "type": "counter"
     },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
@@ -236,7 +209,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 250
+      "maxSize": 50
     }
   ]
 }`;
