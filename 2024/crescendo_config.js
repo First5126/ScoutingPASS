@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024mndu2",
+      "defaultValue": "2024ksla",
       "required": "true"
     },
     { "name": "Match Level",
