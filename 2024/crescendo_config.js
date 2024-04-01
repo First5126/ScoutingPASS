@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024ksla",
+      "defaultValue": "2024mokc",
       "required": "true"
     },
     { "name": "Match Level",
